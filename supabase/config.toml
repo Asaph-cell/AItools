@@ -1,0 +1,7 @@
+project_id = "nxzhbozkoqjyzykqppst"
+
+[functions.track-event]
+verify_jwt = false
+
+[functions.sync-tools]
+verify_jwt = false
