@@ -146,10 +146,6 @@ export default function Home() {
         <AdSenseBanner />
       </div>
 
-      {/* Footer */}
-      <footer className="border-t border-surface-border py-8 text-center text-sm text-muted-foreground">
-        <p>© {new Date().getFullYear()} AI Tool Atlas. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
