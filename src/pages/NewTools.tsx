@@ -91,6 +91,10 @@ export default function NewTools() {
         ) : (
           <ToolGrid tools={newTools} onCompare={handleCompare} compareList={compareList} />
         )}
+
+        <div className="mt-12">
+          <AdSenseBanner />
+        </div>
       </div>
 
       <footer className="border-t border-surface-border py-8 text-center text-sm text-muted-foreground mt-12">

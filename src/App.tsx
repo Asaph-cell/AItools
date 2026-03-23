@@ -16,6 +16,7 @@ const NewTools = React.lazy(() => import("./pages/NewTools"));
 const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
 const Terms = React.lazy(() => import("./pages/Terms"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
+const VsPage = React.lazy(() => import("./pages/VsPage"));
 const Footer = React.lazy(() => import("./components/Footer"));
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/best/:category" element={<BestOf />} />
             <Route path="/trending" element={<Trending />} />
             <Route path="/new" element={<NewTools />} />
+            <Route path="/vs/:slug" element={<VsPage />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<NotFound />} />

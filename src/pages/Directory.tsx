@@ -66,6 +66,10 @@ export default function Directory() {
         ) : (
           <ToolGrid tools={filtered} onCompare={handleCompare} compareList={compareList} />
         )}
+
+        <div className="mt-12">
+          <AdSenseBanner />
+        </div>
       </div>
     </div>
   );

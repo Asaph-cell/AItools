@@ -25,9 +25,9 @@ Deno.serve(async (req) => {
 
     // Step 1: Search for new AI tools using Firecrawl
     const sources = [
-      'new AI tools launched this week 2026',
-      'best new AI tools product hunt',
-      'trending AI tools startups',
+      'new AI web app site:com',
+      'AI productivity tool application',
+      'AI code generation assistant app',
     ];
 
     const allDiscovered: any[] = [];
@@ -75,11 +75,36 @@ Deno.serve(async (req) => {
       const markdown = result.markdown || '';
 
       // Skip if it's a known directory or news site, not a tool itself
-      if (!url || url.includes('producthunt.com') || url.includes('reddit.com') || url.includes('twitter.com')) continue;
+      if (
+        !url || 
+        url.includes('producthunt.com') || 
+        url.includes('reddit.com') || 
+        url.includes('twitter.com') ||
+        url.includes('youtube.com') ||
+        url.includes('medium.com') ||
+        url.includes('forbes.com') ||
+        url.includes('techcrunch.com') ||
+        url.includes('wired.com')
+      ) continue;
 
       // Simple extraction: use title as tool name candidate
       const toolName = title.split(' - ')[0].split(' | ')[0].split(':')[0].trim();
       if (!toolName || toolName.length > 50) continue;
+      
+      const lowercaseTitle = title.toLowerCase();
+      // Aggressively ignore articles, listicles, and review videos
+      if (
+        lowercaseTitle.includes('best') || 
+        lowercaseTitle.includes('top') || 
+        lowercaseTitle.includes('list') || 
+        lowercaseTitle.includes('vs') || 
+        lowercaseTitle.includes('review') || 
+        lowercaseTitle.includes('tested') ||
+        lowercaseTitle.includes('why') ||
+        lowercaseTitle.includes('how ') ||
+        lowercaseTitle.includes('need in')
+      ) continue;
+
       if (existingNames.has(toolName.toLowerCase())) continue;
       if (existingUrls.has(url.toLowerCase())) continue;
 

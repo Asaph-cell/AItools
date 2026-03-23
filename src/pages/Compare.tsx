@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import ComparisonTable from "@/components/ComparisonTable";
 import { useTools } from "@/hooks/useTools";
 import { AiTool } from "@/lib/supabaseClient";
+import AdSenseBanner from "@/components/AdSenseBanner";
 
 export default function Compare() {
   const [searchParams] = useSearchParams();
@@ -31,9 +32,11 @@ export default function Compare() {
           Compare up to 3 tools side by side
         </p>
 
-        <div className="bg-card border border-surface-border rounded-lg">
+        <div className="bg-card border border-surface-border rounded-lg mb-8">
           <ComparisonTable tools={compareTools} onRemove={handleRemove} />
         </div>
+
+        <AdSenseBanner className="mb-8" />
       </div>
     </div>
   );

@@ -70,6 +70,13 @@ export default function Matchmaker() {
             ) : (
               <ToolGrid tools={results} onCompare={handleCompare} compareList={compareList} />
             )}
+
+            {/* Bottom Banner Ad */}
+            {answers && (
+              <div className="mt-12">
+                <AdSenseBanner />
+              </div>
+            )}
           </div>
         )}
       </div>
