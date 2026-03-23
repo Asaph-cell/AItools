@@ -119,10 +119,19 @@ Deno.serve(async (req) => {
 
       const slug = toolName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
+      // Strip markdown formatting and extra spaces for clean prose
+      const cleanText = markdown
+        .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // remove links but keep text
+        .replace(/[#*`_>-]/g, '') // remove markdown formatting
+        .replace(/\s+/g, ' ') // collapse whitespace
+        .trim();
+        
+      const newDescription = result.description || (cleanText.slice(0, 800) + (cleanText.length > 800 ? '...' : ''));
+
       newTools.push({
         name: toolName,
         slug,
-        description: result.description || markdown.slice(0, 200),
+        description: newDescription,
         website_url: url,
         category,
         skill_level: 'Beginner / No-Code',
