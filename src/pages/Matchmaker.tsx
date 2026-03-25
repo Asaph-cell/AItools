@@ -32,7 +32,7 @@ export default function Matchmaker() {
       <SEO 
         title="AI Matchmaker — Find Your Perfect AI Tool"
         description="Answer a few quick questions and get personalized AI tool recommendations tailored to your specific needs and skill level."
-        canonical="https://aitoolatlas.com/matchmaker"
+        canonical="https://findaitools.online/matchmaker"
       />
       <Navbar />
       <div className="container max-w-6xl mx-auto px-4 py-12">

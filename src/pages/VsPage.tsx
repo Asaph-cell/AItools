@@ -71,7 +71,7 @@ export default function VsPage() {
       <SEO 
         title={`${toolA.name} vs ${toolB.name} (2026): In-Depth Comparison`}
         description={`Deciding between ${toolA.name} and ${toolB.name}? Read our deep-dive comparison covering pricing, features, pros, and cons to see which ${category} tool is right for you.`}
-        canonical={`https://aitoolatlas.com/vs/${slug}`}
+        canonical={`https://findaitools.online/vs/${slug}`}
       />
       <Navbar />
       

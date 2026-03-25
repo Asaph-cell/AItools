@@ -30,7 +30,7 @@ export default function Trending() {
       <SEO 
         title="Trending AI Tools — Most Popular This Week"
         description="See which AI tools are currently trending based on user clicks, comparisons, and matchmaker results."
-        canonical="https://aitoolatlas.com/trending"
+        canonical="https://findaitools.online/trending"
       />
       <Navbar />
       <div className="container max-w-6xl mx-auto px-4 py-8">

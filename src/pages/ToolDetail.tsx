@@ -79,7 +79,7 @@ export default function ToolDetail() {
       <SEO 
         title={`${tool.name} Review, Pricing & Features (2026)`}
         description={tool.description || `Read our full review, features, pros, cons, and pricing for ${tool.name}. Is it the best ${tool.category} tool out there?`}
-        canonical={`https://aitoolatlas.com/tools/${tool.slug}`}
+        canonical={`https://findaitools.online/tools/${tool.slug}`}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",

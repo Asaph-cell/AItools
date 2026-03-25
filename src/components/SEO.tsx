@@ -15,7 +15,7 @@ export default function SEO({
   title = "AI Tool Atlas — Find the Perfect AI Tool in 30 Seconds",
   description = "Discover the best AI tools for coding, research, writing, automation, and more. Take a 30-second quiz or browse our directory of 20+ AI tools.",
   keywords = "AI tools, artificial intelligence, productivity tools, coding AI, writing AI, research AI",
-  canonical = "https://aitoolatlas.com",
+  canonical = "https://findaitools.online",
   ogType = "website",
   ogImage = "https://lovable.dev/opengraph-image-p98pqg.png",
   twitterCard = "summary_large_image",

@@ -108,7 +108,7 @@ export default function BestOf() {
       <SEO 
         title={config.title}
         description={config.description}
-        canonical={`https://aitoolatlas.com/best/${category}`}
+        canonical={`https://findaitools.online/best/${category}`}
       />
       <Navbar />
       

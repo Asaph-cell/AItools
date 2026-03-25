@@ -37,7 +37,7 @@ export default function NewTools() {
       <SEO 
         title="New AI Tools — Recently Added Discoveries"
         description="Stay ahead of the curve with the latest AI tools added to our directory this week and month."
-        canonical="https://aitoolatlas.com/new"
+        canonical="https://findaitools.online/new"
       />
       <Navbar />
       <div className="container max-w-6xl mx-auto px-4 py-8">

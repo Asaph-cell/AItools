@@ -24,10 +24,15 @@ Deno.serve(async (req) => {
     );
 
     // Step 1: Search for new AI tools using Firecrawl
+    const categories = ['marketing', 'design', 'research', 'productivity', 'coding', 'audio', 'video', 'automation', 'writing'];
+    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+
     const sources = [
-      'new AI web app site:com',
-      'AI productivity tool application',
-      'AI code generation assistant app',
+      `new AI ${randomCategory} tools ${currentMonth} ${currentYear}`,
+      `best AI web app for ${randomCategory}`,
+      `underrated AI tools for ${randomCategory}`
     ];
 
     const allDiscovered: any[] = [];

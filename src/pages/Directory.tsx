@@ -31,7 +31,7 @@ export default function Directory() {
       <SEO 
         title="AI Tool Directory — Browse 20+ Top AI Tools"
         description="Explore our comprehensive directory of AI tools categorized by use case. Filter by pricing, category, and platform to find exactly what you need."
-        canonical="https://aitoolatlas.com/directory"
+        canonical="https://findaitools.online/directory"
       />
       <Navbar />
       <div className="container max-w-6xl mx-auto px-4 py-8">
