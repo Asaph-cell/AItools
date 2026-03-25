@@ -17,6 +17,10 @@ const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
 const Terms = React.lazy(() => import("./pages/Terms"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const VsPage = React.lazy(() => import("./pages/VsPage"));
+const AlternativesPage = React.lazy(() => import("./pages/AlternativesPage"));
+const BlogIndex = React.lazy(() => import("./pages/BlogIndex"));
+const BlogPost = React.lazy(() => import("./pages/BlogPost"));
+const CategoryPage = React.lazy(() => import("./pages/CategoryPage"));
 const Footer = React.lazy(() => import("./components/Footer"));
 
 const queryClient = new QueryClient();
@@ -39,6 +43,10 @@ const App = () => (
             <Route path="/trending" element={<Trending />} />
             <Route path="/new" element={<NewTools />} />
             <Route path="/vs/:slug" element={<VsPage />} />
+            <Route path="/alternatives/:slug" element={<AlternativesPage />} />
+            <Route path="/blog" element={<BlogIndex />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<NotFound />} />

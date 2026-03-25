@@ -13,14 +13,14 @@ interface FAQItem {
 
 const DEFAULT_FAQ: FAQItem[] = [
   {
-    question: "How does AI Tool Atlas find and rank tools?",
+    question: "How does Find AI Tools find and rank tools?",
     answer:
       "We use a combination of automated scraping and manual curation to discover AI tools across the web. Each tool is evaluated on features, pricing, user reviews, and community sentiment. Our trend scores update weekly based on user clicks, comparisons, and quiz matches.",
   },
   {
-    question: "Is AI Tool Atlas free to use?",
+    question: "Is Find AI Tools free to use?",
     answer:
-      "Yes! AI Tool Atlas is 100% free. You can browse the directory, use our AI Matchmaker quiz, compare tools side-by-side, and read all our guides without any account or payment.",
+      "Yes! Find AI Tools is 100% free. You can browse the directory, use our AI Matchmaker quiz, compare tools side-by-side, and read all our guides without any account or payment.",
   },
   {
     question: "How often is the tool database updated?",

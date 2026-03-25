@@ -176,7 +176,7 @@ export default function ToolDetail() {
         <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mb-8 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
           <h2 className="text-sm font-bold uppercase tracking-wider text-primary mb-2 flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4" /> The AI Tool Atlas Verdict
+            <ShieldCheck className="w-4 h-4" /> The Find AI Tools Verdict
           </h2>
           <p className="text-base text-foreground font-medium mb-4 leading-relaxed">
             When evaluating {tool.category.toLowerCase()} tools in {new Date().getFullYear()}, {tool.name} consistently stands out as a reliable option for users looking to {tool.primary_use_case.toLowerCase()}. Designed specifically as a {tool.platform.toLowerCase()}, it caters directly to those with a {tool.skill_level.toLowerCase()} skill level, ensuring that the learning curve matches expectations. 
@@ -322,7 +322,7 @@ export default function ToolDetail() {
       </div>
 
       <footer className="border-t border-surface-border py-8 text-center text-sm text-muted-foreground">
-        <p>© {new Date().getFullYear()} AI Tool Atlas. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Find AI Tools. All rights reserved.</p>
       </footer>
     </div>
   );

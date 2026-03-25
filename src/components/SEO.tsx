@@ -12,7 +12,7 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "AI Tool Atlas — Find the Perfect AI Tool in 30 Seconds",
+  title = "Find AI Tools — Find the Perfect AI Tool in 30 Seconds",
   description = "Discover the best AI tools for coding, research, writing, automation, and more. Take a 30-second quiz or browse our directory of 20+ AI tools.",
   keywords = "AI tools, artificial intelligence, productivity tools, coding AI, writing AI, research AI",
   canonical = "https://findaitools.online",
@@ -21,7 +21,7 @@ export default function SEO({
   twitterCard = "summary_large_image",
   jsonLd,
 }: SEOProps) {
-  const fullTitle = title.includes("AI Tool Atlas") ? title : `${title} | AI Tool Atlas`;
+  const fullTitle = title.includes("Find AI Tools") ? title : `${title} | Find AI Tools`;
 
   return (
     <Helmet>

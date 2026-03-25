@@ -10,7 +10,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-bold text-card-foreground shrink-0 whitespace-nowrap">
           <Compass className="h-5 w-5 text-primary shrink-0" />
-          <span className="truncate">AI Tool Atlas</span>
+          <span className="truncate">Find AI Tools</span>
         </Link>
         
         {/* Desktop Nav */}
@@ -29,6 +29,9 @@ export default function Navbar() {
           </Button>
           <Button variant="ghost" size="sm" asChild>
             <Link to="/compare">Compare</Link>
+          </Button>
+          <Button variant="ghost" size="sm" asChild>
+            <Link to="/blog">Blog</Link>
           </Button>
           <div className="w-px h-4 bg-border mx-2" />
           <Button size="sm" asChild>
@@ -53,7 +56,7 @@ export default function Navbar() {
               <div className="flex flex-col gap-6 mt-6">
                 <Link to="/" className="flex items-center gap-2 font-bold">
                   <Compass className="h-5 w-5 text-primary" />
-                  AI Tool Atlas
+                  Find AI Tools
                 </Link>
                 <div className="flex flex-col gap-2">
                   <Button variant="ghost" className="justify-start text-base" asChild>
@@ -70,6 +73,9 @@ export default function Navbar() {
                   </Button>
                   <Button variant="ghost" className="justify-start text-base" asChild>
                     <Link to="/compare">Compare</Link>
+                  </Button>
+                  <Button variant="ghost" className="justify-start text-base" asChild>
+                    <Link to="/blog">Blog</Link>
                   </Button>
                   <div className="h-px w-full bg-border my-2" />
                   <Button className="justify-start text-base" asChild>

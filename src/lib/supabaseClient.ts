@@ -26,4 +26,24 @@ export type AiTool = {
   pros: string[] | null;
   cons: string[] | null;
   key_features: string[] | null;
+  long_description: string | null;
+  pricing_details: Record<string, any> | null;
+  integrations: string[] | null;
+  alternatives: string[] | null;
+  subcategory: string | null;
 };
+
+export type AutoContent = {
+  id: string;
+  slug: string;
+  title: string;
+  content: string;
+  content_type: string;
+  category: string | null;
+  related_tool_ids: string[] | null;
+  meta_description: string | null;
+  published: boolean;
+  created_at: string;
+  updated_at: string;
+};
+

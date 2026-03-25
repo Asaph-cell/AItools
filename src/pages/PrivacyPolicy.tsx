@@ -5,8 +5,8 @@ export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="Privacy Policy — AI Tool Atlas" 
-        description="Privacy policy and data collection practices for AI Tool Atlas." 
+        title="Privacy Policy — Find AI Tools" 
+        description="Privacy policy and data collection practices for Find AI Tools." 
       />
       <Navbar />
       
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">3. External Links</h2>
           <p>
-            AI Tool Atlas is a directory that links to external AI tools and websites. We are not responsible for the privacy practices or content of these third-party websites. We encourage our users to be aware when they leave our site and to read the privacy statements of every website that collects personally identifiable information.
+            Find AI Tools is a directory that links to external AI tools and websites. We are not responsible for the privacy practices or content of these third-party websites. We encourage our users to be aware when they leave our site and to read the privacy statements of every website that collects personally identifiable information.
           </p>
         </section>
 

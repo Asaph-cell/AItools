@@ -5,8 +5,8 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="Terms of Service — AI Tool Atlas" 
-        description="Terms of Service and usage conditions for AI Tool Atlas." 
+        title="Terms of Service — Find AI Tools" 
+        description="Terms of Service and usage conditions for Find AI Tools." 
       />
       <Navbar />
       
@@ -17,14 +17,14 @@ export default function Terms() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
           <p>
-            By accessing and using AI Tool Atlas (the "Website"), you accept and agree to be bound by the terms and provision of this agreement.
+            By accessing and using Find AI Tools (the "Website"), you accept and agree to be bound by the terms and provision of this agreement.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">2. Description of Service</h2>
           <p>
-            AI Tool Atlas provides a curated directory and search engine for artificial intelligence tools. We aggregate information from across the web. The information provided is for general conversational and informational purposes only.
+            Find AI Tools provides a curated directory and search engine for artificial intelligence tools. We aggregate information from across the web. The information provided is for general conversational and informational purposes only.
           </p>
         </section>
 
@@ -38,7 +38,7 @@ export default function Terms() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">4. Affiliate and Advertising Disclosure</h2>
           <p>
-            AI Tool Atlas displays advertisements served by Google AdSense and may contain affiliate links. We may earn a commission if you click on certain links or purchase products from third-party sites. This does not affect our editorial independence or the objectivity of the tools we list.
+            Find AI Tools displays advertisements served by Google AdSense and may contain affiliate links. We may earn a commission if you click on certain links or purchase products from third-party sites. This does not affect our editorial independence or the objectivity of the tools we list.
           </p>
         </section>
 

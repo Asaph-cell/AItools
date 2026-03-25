@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 font-bold text-lg text-foreground mb-4">
               <Compass className="h-6 w-6 text-primary" />
-              AI Tool Atlas
+              Find AI Tools
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               Discover, compare, and choose the perfect AI tools for your workflow. Expert reviews, community ratings, and side-by-side comparisons.
@@ -43,6 +43,7 @@ export default function Footer() {
               <li><Link to="/compare" className="text-muted-foreground hover:text-primary transition-colors">Compare Tools</Link></li>
               <li><Link to="/trending" className="text-muted-foreground hover:text-primary transition-colors">Trending This Week</Link></li>
               <li><Link to="/new" className="text-muted-foreground hover:text-primary transition-colors">Recently Added</Link></li>
+              <li><Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog & Guides</Link></li>
             </ul>
           </div>
 
@@ -57,7 +58,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-surface-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} AI Tool Atlas. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Find AI Tools. All rights reserved.</p>
           <p>
             <span className="opacity-70">Designed for builders, creators, and researchers.</span>
           </p>

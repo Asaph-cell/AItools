@@ -213,7 +213,7 @@ export default function BestOf() {
       </div>
 
       <footer className="border-t border-surface-border py-8 text-center text-sm text-muted-foreground mt-12 relative z-10">
-        <p>© {new Date().getFullYear()} AI Tool Atlas. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Find AI Tools. All rights reserved.</p>
       </footer>
     </div>
   );
