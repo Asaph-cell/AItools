@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import ToolGrid from "@/components/ToolGrid";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import { useTools } from "@/hooks/useTools";
 import { AiTool } from "@/lib/supabaseClient";
@@ -76,9 +75,6 @@ export default function NewTools() {
             This Month
           </Button>
         </div>
-
-        <AdSenseBanner className="mb-6" />
-
         {isLoading ? (
           <p className="text-muted-foreground text-center py-12">Loading tools...</p>
         ) : newTools.length === 0 ? (
@@ -92,9 +88,7 @@ export default function NewTools() {
           <ToolGrid tools={newTools} onCompare={handleCompare} compareList={compareList} />
         )}
 
-        <div className="mt-12">
-          <AdSenseBanner />
-        </div>
+        <div className="mt-12">        </div>
       </div>
 
       <footer className="border-t border-surface-border py-8 text-center text-sm text-muted-foreground mt-12">

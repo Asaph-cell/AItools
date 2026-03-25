@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import { useTools } from "@/hooks/useTools";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import FAQ from "@/components/FAQ";
 import { ExternalLink, ArrowLeft, Check, X, ShieldCheck, GitCompare } from "lucide-react";
@@ -158,9 +157,6 @@ export default function VsPage() {
             </Button>
           </div>
         </div>
-
-        <AdSenseBanner className="mb-16" />
-
         {/* ══════════════ FEATURE COMPARISON ══════════════ */}
         <div className="bg-card/40 backdrop-blur-md border border-white/10 rounded-3xl p-6 md:p-10 mb-16 overflow-hidden">
           <div className="flex items-center gap-3 mb-8">

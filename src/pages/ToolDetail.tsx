@@ -4,7 +4,6 @@ import { useTools } from "@/hooks/useTools";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import ToolCard from "@/components/ToolCard";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import FAQ from "@/components/FAQ";
 import { ExternalLink, ArrowLeft, GitCompare, Check, X, ShieldCheck, Sparkles } from "lucide-react";
@@ -201,9 +200,6 @@ export default function ToolDetail() {
             </div>
           </div>
         </div>
-
-        <AdSenseBanner className="mb-8" />
-
         {/* ══════════════ PROS & CONS ══════════════ */}
         {((tool.pros && tool.pros.length > 0) || (tool.cons && tool.cons.length > 0)) && (
           <div className="grid md:grid-cols-2 gap-6 mb-12">

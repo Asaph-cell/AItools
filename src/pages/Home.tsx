@@ -5,7 +5,6 @@ import ToolCard from "@/components/ToolCard";
 import EditorsPick from "@/components/EditorsPick";
 import StatsCounter from "@/components/StatsCounter";
 import FAQ from "@/components/FAQ";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import { useTools } from "@/hooks/useTools";
 import {
@@ -81,9 +80,7 @@ export default function Home() {
       <Navbar />
 
       {/* Banner Ad */}
-      <div className="container max-w-6xl mx-auto px-4 pt-4">
-        <AdSenseBanner />
-      </div>
+      <div className="container max-w-6xl mx-auto px-4 pt-4">      </div>
 
       {/* ══════════════ HERO ══════════════ */}
       <section className="container max-w-6xl mx-auto px-4 py-16 md:py-24 text-center relative">
@@ -199,9 +196,7 @@ export default function Home() {
       )}
 
       {/* Mid-page Ad */}
-      <div className="container max-w-6xl mx-auto px-4 pb-8">
-        <AdSenseBanner />
-      </div>
+      <div className="container max-w-6xl mx-auto px-4 pb-8">      </div>
 
       {/* ══════════════ TRENDING ══════════════ */}
       {trending.length > 0 && (
@@ -328,9 +323,7 @@ export default function Home() {
       <FAQ />
 
       {/* Bottom AdSense */}
-      <div className="container max-w-6xl mx-auto px-4 pb-16">
-        <AdSenseBanner />
-      </div>
+      <div className="container max-w-6xl mx-auto px-4 pb-16">      </div>
     </div>
   );
 }

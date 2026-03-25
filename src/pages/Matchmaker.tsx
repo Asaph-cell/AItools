@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Quiz from "@/components/Quiz";
 import ToolGrid from "@/components/ToolGrid";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import { useTools } from "@/hooks/useTools";
 import { filterTools, QuizAnswers } from "@/utils/filterTools";
@@ -63,8 +62,6 @@ export default function Matchmaker() {
             </div>
 
             {/* Banner Ad */}
-            <AdSenseBanner className="mb-6" />
-
             {isLoading ? (
               <p className="text-muted-foreground text-center py-12">Loading tools...</p>
             ) : (
@@ -73,9 +70,7 @@ export default function Matchmaker() {
 
             {/* Bottom Banner Ad */}
             {answers && (
-              <div className="mt-12">
-                <AdSenseBanner />
-              </div>
+              <div className="mt-12">              </div>
             )}
           </div>
         )}

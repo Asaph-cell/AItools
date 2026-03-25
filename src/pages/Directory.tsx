@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import FilterPanel from "@/components/FilterPanel";
 import ToolGrid from "@/components/ToolGrid";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import { useTools } from "@/hooks/useTools";
 import { filterToolsByFilters } from "@/utils/filterTools";
@@ -57,8 +56,6 @@ export default function Directory() {
         </div>
 
         {/* Banner Ad */}
-        <AdSenseBanner className="mb-6" />
-
         {isLoading ? (
           <p className="text-muted-foreground text-center py-12">Loading tools...</p>
         ) : filtered.length === 0 ? (
@@ -67,9 +64,7 @@ export default function Directory() {
           <ToolGrid tools={filtered} onCompare={handleCompare} compareList={compareList} />
         )}
 
-        <div className="mt-12">
-          <AdSenseBanner />
-        </div>
+        <div className="mt-12">        </div>
       </div>
     </div>
   );

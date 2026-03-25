@@ -1,7 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import EditorsPick from "@/components/EditorsPick";
-import AdSenseBanner from "@/components/AdSenseBanner";
 import SEO from "@/components/SEO";
 import { useTools } from "@/hooks/useTools";
 import { AiTool } from "@/lib/supabaseClient";
@@ -123,9 +122,6 @@ export default function BestOf() {
             {config.description}
           </p>
         </div>
-
-        <AdSenseBanner className="mb-10" />
-
         <div className="prose prose-invert max-w-none mb-12">
           <p className="text-lg text-muted-foreground leading-relaxed">
             {config.intro}
